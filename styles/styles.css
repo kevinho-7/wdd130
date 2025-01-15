@@ -1,3 +1,6 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 main{
     max-width: 840px;
 }
@@ -12,8 +15,6 @@ aside{
     padding: 1rem;
     background-color: #ffff00;
     color: #066b06;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
 }
 aside img{
     width: 200px;
