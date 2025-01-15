@@ -1,26 +1,48 @@
-
+main{
+    max-width: 840px;
+}
+main img{
+    width: 150px;
+    height: auto;
+}
+aside{
+    width: 20rem;
+    margin: 1rem;
+    border: 2px solid #0000ff;
+    padding: 1rem;
+    background-color: #ffff00;
+    color: #066b06;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+aside img{
+    width: 200px;
+    height: auto;
+}
 nav {
-    background-color: darkblue;
+    background-color: #00008b;
     padding: 10px;
   }
   nav a {
-    color: white;
+    color: #ffffff;
     display: block;
     padding: 20px;
   }
-  h1 {
-    color: darkblue;
+h1 {
+    color: #00008b;
   }
-  img {
+img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid #000000;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px #808080;
   }
-  p {
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+p {
+    padding: 0;
   }
-    
+footer{
+    margin-top: 25px;
+    border-top: 2px dashed #0000ff;
+    text-align: center;
+}
