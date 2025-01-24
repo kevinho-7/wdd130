@@ -1,61 +1,67 @@
-
-:root{
-    /* Colors */
+:root {
     --primary-color: #12CCC6;
     --secundary-color: #0EA89E;
     --accent1-color: #FFFFFF;
     --accent2-color: #1A1A1A;
 
-    /* Text-font */
     --text-font-family: "Montserrat", serif;
     --text-font-weight: 500;
 
-    /* Heading-font */
     --heading-font-family: "Bebas Neue", serif;
     --heading-font-weight: 400;
     --heading-font-size: 3rem;
 }
 
-body{
+body {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
     font-family: var(--text-font-family);
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+header {
     background-color: var(--primary-color);
     padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 150px;
 }
 
-nav{
+.logo {     
+    height: 150px;
+    margin-left: 500px;
+    width: auto;
+}
+
+nav {
     background-color: var(--secundary-color);
     border-radius: 15px;
-    padding: 10px;
-    width: 25%;
+    padding: 10px 15px;
     display: flex;
-    margin: auto;
-    margin-top: -95px;
-    padding: 15px;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: auto;
+    width: 25%;
 }
 
-nav ul{
-    /* border: 2px solid black; */
+nav ul {
     list-style-type: none;
     display: flex;
-    margin: 0 auto;
+    justify-content: space-around;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li{
-    display: inline;
-    margin: 0 10px;
+nav ul li {
     font-family: var(--text-font-family);
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: var(--accent2-color);
     background-color: var(--accent1-color);
@@ -64,17 +70,12 @@ nav a{
     font-weight: var(--text-font-weight);
 }
 
-    nav a:hover{
-        background-color: var(--secundary-color);
-        color: var(--accent1-color);
-    }
-
-.logo{
-    margin-left: 500px;
-    height: 150px;
+nav a:hover {
+    background-color: var(--secundary-color);
+    color: var(--accent1-color);
 }
 
-.hero{
+.hero {
     position: relative;
     display: flex;
     margin: 20px auto;
@@ -82,27 +83,27 @@ nav a{
     height: 500px;
 }
 
-.hero img{
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1{
+.hero h1 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
     color: var(--accent2-color);
     font-size: var(--heading-font-size);
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* I looked at google and learned it */
+    transform: translateX(-50%);
     border: 2px solid var(--accent1-color);
     border-radius: 15px;
     background-color: var(--accent1-color);
     padding: 10px;
 }
 
-.hero article{
+.hero article {
     border-radius: 5px;
     position: absolute;
     left: 50%;
@@ -111,22 +112,19 @@ nav a{
     background-color: var(--accent1-color);
     color: var(--accent2-color);
     width: 80%;
-    height: auto;
     padding: 30px;
 }
 
-.hero p{
+.hero p {
     font-size: 1.5rem;
+    line-height: 1.5;
     width: 80%;
-    height: auto;
 }
 
-.hero article img{
+.hero article img {
     float: right;
     border-radius: 10px;
     margin: 10px 40px 10px 0;
     width: 250px;
     height: auto;
-}
-
-
+}   
