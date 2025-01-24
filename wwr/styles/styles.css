@@ -107,7 +107,7 @@ nav a:hover {
     border-radius: 5px;
     position: absolute;
     left: 50%;
-    bottom: 25%;
+    bottom: 10%;
     transform: translateX(-50%);
     background-color: var(--accent1-color);
     color: var(--accent2-color);
@@ -124,7 +124,7 @@ nav a:hover {
 .hero article img {
     float: right;
     border-radius: 10px;
-    margin: 10px 40px 10px 0;
+    margin: 40px 40px 10px 10px;
     width: 250px;
     height: auto;
 }   
