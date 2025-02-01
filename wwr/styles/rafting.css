@@ -84,41 +84,49 @@ nav a:hover {
     align-items: center;
 }
 
-.hero img {
-    grid-row: 1/2;
-    width: 95vw;
-    height: 60vh;
-    object-fit: cover;   
-}
-
 .hero h1 {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     font-size: var(--heading-font-size);
-    border: 2px solid var(--accent1-color);
     border-radius: 15px;
-    background-color: var(--accent1-color);
     padding: 10px;
     max-width: 80%;
-    text-align: center;
+    margin-left: 10vw;
+    z-index: 2;
+    position: relative;
+    top: 50px;
+
 }
 
+.hero img {
+    position: relative;
+    z-index: 1;
+    margin-left: 5.5vw;
+    width: 95vw;
+    height: 80vh;
+    object-fit: cover; 
+    bottom: 100px;
+}
+
+
 .hero article {
+    position: absolute;
+    z-index: 2;
+    width: 80vw;
+    top: 350px;
+    left: 100px;
+    height: 300px;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
     border-radius: 5px;
-    padding: 20px;
-    position: flex; 
-    top: 10%;  
-    left: 10%; 
-    width: 80%;
-    max-height: 300px;
-    z-index: 10; 
+    padding: 20px; 
 }
 
 .hero article img {
-    display: block;
+    position: relative;
+    left: 75%;
+    top: 30px;
     margin: 20px auto;
     width: 100%;
     max-width: 250px;
@@ -126,26 +134,141 @@ nav a:hover {
     border-radius: 10px;
 }
 
+.hero-paragraph{
+    width: 70%;
+    position: relative;
+    left: 10px;
+    bottom: 150px;
+    font-size: var(--text-font-size);
+}
 
-.h2-style, .p-history {
-    background-color: var(--primary-color);
-    text-align: center;
-    border-radius: 15px;
+.history-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    max-width: 800px;
     margin: 20px auto;
+    background-color: #12CCC6;
+    width: 95vw;
+    height: 500px;
+    border: 1px solid var(--accent2-color);
 }
 
 .p-history {
+    margin-right: 70%;
+    position: relative;
+    top: 250px;
     font-size: var(--text-font-size);
+    width: 20vw;
+}
+
+.river-section{
+    position: relative;
+    bottom: 120px;
+    width: 40vw;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.p-history2 {
+
+    margin-left: 70%;
+    position: relative;
+    bottom: 450px;
+    font-size: var(--text-font-size);
+    width: 20vw;
+}
+
+.h2-style{
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    color: var(--accent2-color);
+    font-size: var(--heading-font-size);
+    border: 2px solid var(--accent1-color);
+    background-color: var(--accent1-color);
+    border-radius: 15px;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    top: 350px;
+}
+
+.gallery-container {
+    background-color: var(--secundary-color);
+    text-align: center; 
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.gallery-container h2 {
+    font-family: var(--heading-font-family);
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+    border: 2px solid var(--accent1-color);
+    background-color: var(--accent1-color);
+    border-radius: 15px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.item {
+    text-align: center; 
+}
+
+.item img {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover; 
+    background-color: #ddd; 
+    border-radius: 5px; 
+}
+
+.item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: var(--secundary-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: var(--accent2-color);
+}
+
+footer p {
+    flex: 1;
+    margin: 0;
+    text-align: center; 
 }
 
 .sociallinks {
     display: flex;
-    justify-content: center;
     gap: 10px;
     padding: 10px;
     flex-wrap: wrap;
+}
+
+.sociallinks img {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 @media (min-width: 768px) {
