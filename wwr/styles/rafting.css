@@ -271,6 +271,11 @@ footer p {
     border-radius: 5px;
 }
 
+
+
+
+
+
 @media (min-width: 768px) {
     .hero {
         grid-template-columns: repeat(2, 1fr);
