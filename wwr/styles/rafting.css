@@ -222,6 +222,9 @@ nav a:hover {
 
 .item {
     text-align: center; 
+    font-weight: var(--text-font-weight);
+    font-size: var(--text-font-size);
+    color: var(--accent2-color);
 }
 
 .item img {
@@ -230,12 +233,6 @@ nav a:hover {
     object-fit: cover; 
     background-color: #ddd; 
     border-radius: 5px; 
-}
-
-.item p {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #555;
 }
 
 
@@ -250,6 +247,8 @@ footer {
 }
 
 footer p {
+    font-size: var(--text-font-size);
+    font-weight: var(--text-font-weight);
     flex: 1;
     margin: 0;
     text-align: center; 
