@@ -24,9 +24,8 @@ body {
 
 header {
     background-color: var(--primary-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
     padding: 20px;
 }
@@ -34,25 +33,25 @@ header {
 .logo {
     height: 100px;
     width: auto;
-    margin: 0 auto;
+    justify-self: start;
+    margin-left: 40px;
 }
 
 nav {
     background-color: var(--secundary-color);
     border-radius: 15px;
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: grid;
+    justify-content: end;
+    width: auto;
     max-width: 500px;
-    margin: 10px auto;
+    margin-right: 40px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-auto-flow: column;
     gap: 15px;
     padding: 0;
     margin: 0;
@@ -60,6 +59,7 @@ nav ul {
 
 nav ul li {
     font-family: var(--text-font-family);
+    text-align: center;
 }
 
 nav a {
@@ -69,6 +69,7 @@ nav a {
     padding: 8px 12px;
     border-radius: 5px;
     font-weight: var(--text-font-weight);
+    display: block;
 }
 
 nav a:hover {
