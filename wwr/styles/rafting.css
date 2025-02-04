@@ -3,6 +3,7 @@
     --secundary-color: #0EA89E;
     --accent1-color: #FFFFFF;
     --accent2-color: #1A1A1A;
+    --accent3-color: #E0E6E6;
 
     --text-font-family: "Montserrat", serif;
     --text-font-weight: 500;
@@ -271,10 +272,56 @@ footer p {
     border-radius: 5px;
 }
 
+.styled-div{
+    background-color: var(--secundary-color);
+    padding: 10px;
+}
 
 
+.heading-contact{
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-size: var(--heading-font-size);
+    color: var(--accent2-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent1-color);
+    border-radius: 15px;
+    width: 400px;
+}
 
+.location-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--accent3-color);
+}
 
+.location-container h2{
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-size: 2rem;
+    color: var(--accent2-color);
+}
+
+.location-container-informations-div{
+    border: 1px solid var(--accent2-color);
+    border-radius: 15px;
+    background-color: var(--secundary-color);
+    width: 400px;
+    height: 350px;
+    padding: 30px;
+    margin: 20px auto;
+}
+
+.location-container-map{
+    margin-left: 300px;
+}
 
 @media (min-width: 768px) {
     .hero {
