@@ -251,6 +251,7 @@ footer {
 footer p {
     font-size: 1rem;
     font-weight: var(--text-font-weight);
+    color: var(--accent2-color);
     flex: 1;
     margin: 0;
     text-align: center; 
@@ -332,7 +333,7 @@ footer p {
 }
 
 .form-container {
-    background: var(--secundary-color);
+    background: var(--primary-color);
     padding: 40px;
     border-radius: 8px;
     width: 100%;
@@ -344,6 +345,7 @@ footer p {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    color: var(--accent2-color);
 }
 .form-input, .form-textarea {
     width: 90%;
@@ -353,7 +355,7 @@ footer p {
     margin-top: 5px;
     border: none;
     border-radius: 4px;
-    background: var(--accent3-color);
+    background: var(--accent1-color);
     color: var(--accent2-color);
     font-family: var(--text-font-family);
     font-weight: var(--text-font-weight);
@@ -364,7 +366,7 @@ footer p {
     display: inline;
 }
 .form-button {
-    background-color: var(--accent3-color);
+    background-color: var(--accent1-color);
     color: var(--accent2-color);
     font-family: var(--text-font-family);
     font-weight: bold;
@@ -377,7 +379,7 @@ footer p {
     cursor: pointer;
 }
 .form-button:hover {
-    color: var(--secundary-color);
+    color: var(--accent1-color);
     background-color: #b3c0c0;
 }
 
