@@ -45,7 +45,60 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-            </div>    
+            </div>
+            <div class="styled-div">   
+                <h2 class="heading-contact heading-team">Our team is ready to help you!</h2>
+            </div>
+            <section>
+                <div class="gallery-container border-none">
+                    <div class="gallery">
+                        <figure class="item">
+                            <img src="images/employee1.webp" alt="employee1">
+                            <figcaption>Caption</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <img src="images/employee2.webp" alt="employee2">
+                            <figcaption>Caption</figcaption>
+                        </figure>
+                        <figure class="item">
+                            <img src="images/employee3.webp" alt="employee3">
+                            <figcaption>Caption</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <div style="background-color: #E0E6E6; padding: 5px;">
+                <h2 class="heading-contact heading-team">Sent us a message</h2>
+            </div>
+            <div style="display: grid; place-items: center; padding: 30px; background-color: #E0E6E6;">
+                <form class="form-container">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                
+                    <label class="form-label">Purpose of Message:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                        <label for="general">General Inquiry</label><br>
+                        
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                        <label for="reservation">Reservation Question</label><br>
+                        
+                        <input type="radio" id="website" name="purpose" value="Website Suggestion">
+                        <label for="website">Website Suggestion</label>
+                    </div>
+
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" class="form-textarea" style="max-height: 300px; min-height: 100px;" rows="4" required></textarea>
+                
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                
+                    <button type="submit" class="form-button">Submit</button>
+                </form>
+            </div>            
         </main>
         <footer>
             <p>
