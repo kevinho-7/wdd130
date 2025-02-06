@@ -242,7 +242,7 @@ footer {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: var(--secundary-color);
+    background-color: var(--primary-color);
     padding: 15px 20px;
     border-radius: 8px;
     color: var(--accent2-color);
@@ -310,10 +310,11 @@ footer p {
     color: var(--accent2-color);
 }
 
+
 .location-container-informations-div{
     border: 1px solid var(--accent2-color);
     border-radius: 15px;
-    background-color: var(--secundary-color);
+    background-color: var(--primary-color);
     width: 400px;
     height: 350px;
     padding: 30px;
@@ -363,7 +364,9 @@ footer p {
 }
 .radio-group label {
     font-weight: normal;
+    color: var(--accent2-color);
     display: inline;
+
 }
 .form-button {
     background-color: var(--accent1-color);
