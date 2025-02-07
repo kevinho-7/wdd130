@@ -40,7 +40,7 @@
                     <iframe 
                         title="Google Maps" 
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d914.4209586829528!2d-46.47504329821783!3d-23.54387132327603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1738694368472!5m2!1spt-BR!2sbr" 
-                        width="500" height="350" style="border:0;" 
+                        width="500" height="350"  
                         allowfullscreen="" loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
@@ -67,10 +67,10 @@
                     </div>
                 </div>
             </section>
-            <div style="background-color: #E0E6E6; padding: 5px;">
+            <div>
                 <h2 class="heading-contact heading-team">Sent us a message</h2>
             </div>
-            <div style="display: grid; place-items: center; padding: 30px; background-color: #E0E6E6;">
+            <div class="form-localization">
                 <form class="form-container">
                     <label for="name" class="form-label">Name:</label>
                     <input type="text" id="name" name="name" class="form-input" required>
@@ -91,10 +91,10 @@
                     </div>
 
                     <label for="message" class="form-label">Message:</label>
-                    <textarea id="message" name="message" class="form-textarea" style="max-height: 300px; min-height: 100px;" rows="4" required></textarea>
+                    <textarea id="message" name="message" class="form-textarea form-textarea-height"  rows="4" required></textarea>
                 
                     <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter" style="color: var(--accent2-color);">Please subscribe me to the monthly newsletter</label>
+                    <label for="newsletter" class="form-label-newsletter">Please subscribe me to the monthly newsletter</label>
                 
                     <button type="submit" class="form-button">Submit</button>
                 </form>

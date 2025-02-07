@@ -342,12 +342,25 @@ footer p {
     color: #ffffff;
     box-shadow: 0 0 10px var(--accent2-color);
 }
+
+.form-localization{
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    background-color: var(--accent3-color);
+}
+
 .form-label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
     color: var(--accent2-color);
 }
+
+.form-label-newsletter {
+    color: var(--accent2-color);
+}
+
 .form-input, .form-textarea {
     width: 90%;
     max-width: 400px;
@@ -362,6 +375,13 @@ footer p {
     font-weight: var(--text-font-weight);
     font-size: 1rem;
 }
+
+.form-textarea-height {
+    max-height: 300px;
+    min-height: 100px;
+
+}
+
 .radio-group label {
     font-weight: normal;
     color: var(--accent2-color);
@@ -384,6 +404,11 @@ footer p {
 .form-button:hover {
     color: var(--accent1-color);
     background-color: #b3c0c0;
+}
+
+iframe{
+    border: none;
+    border-radius: 15px;
 }
 
 @media (min-width: 768px) {
