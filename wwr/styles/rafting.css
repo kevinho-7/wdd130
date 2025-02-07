@@ -4,6 +4,7 @@
     --accent1-color: #FFFFFF;
     --accent2-color: #1A1A1A;
     --accent3-color: #E0E6E6;
+    --hover-color: #333333;
 
     --text-font-family: "Montserrat", serif;
     --text-font-weight: 500;
@@ -362,7 +363,7 @@ footer p {
 }
 
 .form-input, .form-textarea {
-    width: 90%;
+    width: 90%; 
     max-width: 400px;
     min-width: 400px;
     padding: 8px;
@@ -389,8 +390,8 @@ footer p {
 
 }
 .form-button {
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
     font-family: var(--text-font-family);
     font-weight: bold;
     font-size: var(--text-font-size);
@@ -403,7 +404,22 @@ footer p {
 }
 .form-button:hover {
     color: var(--accent1-color);
-    background-color: #b3c0c0;
+    background-color: var(--hover-color);
+}
+
+.wireframe-link{
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--accent2-color);
+    border-radius: 15px;
+    padding: 4px;
+    color: var(--accent3-color);
+    background-color: #000;
+}
+
+.wireframe-link:hover{
+    background-color: var(--hover-color);
+    color: var(--accent1-color);
 }
 
 iframe{
