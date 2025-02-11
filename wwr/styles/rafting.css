@@ -79,6 +79,11 @@ nav a:hover {
     color: var(--accent1-color);
 }
 
+iframe{
+    border: none;
+    border-radius: 15px;
+}
+
 .hero {
     display: grid;
     flex-direction: row;
@@ -389,6 +394,7 @@ footer p {
     display: inline;
 
 }
+
 .form-button {
     background-color: var(--accent2-color);
     color: var(--accent1-color);
@@ -402,6 +408,7 @@ footer p {
     margin-top: 10px;
     cursor: pointer;
 }
+
 .form-button:hover {
     color: var(--accent1-color);
     background-color: var(--hover-color);
@@ -422,10 +429,149 @@ footer p {
     color: var(--accent1-color);
 }
 
-iframe{
+.index-hero-container {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.index-hero-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.index-hero-heading{
+    width: 35%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-size: var(--heading-font-size);
+    text-align: left;
+    color: var(--accent1-color);
+    text-shadow: 12px 15px 14px var(--accent2-color);
+    z-index: 1;
+}
+
+.hero-text {
+    font-family: var(--text-font-family);
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: var(--accent1-color);
+    text-align: left;
+    padding: 20px;
+    width: 120%;
+    margin-top: -120px;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secundary-color);
+}
+
+.newsletter h2 {
+   font-family: var(--heading-font-family);
+   font-size: var(--heading-font-size);
+   color: var(--accent2-color);
+   text-shadow: 2px 5px 4px var(--accent1-color);
+}
+
+.newsletter form input {
+    font-family: var(--text-font-family);
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+.newsletter button {
+    background: var(--accent2-color);
+    font-family: var(--text-font-family);
+    font-size: var(--text-font-size);
+    color: var(--accent1-color);
+    padding: 10px 15px;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--hover-color);
+}
+
+.cta {
+    text-align: center;
+    padding: 20px;
+    background: var(--accent3-color);
+}
+
+.cta h2{
+    font-family: var(--heading-font-family);
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+}
+
+.cta p {
+    font-family: var(--text-font-family);
+    font-size: var(--text-font-size);
+    font-weight: var(--text-font-weight);
+}
+
+.cta .btn {
+    display: inline-block;
+    font-size: var(--text-font-size);
+    background: var(--accent2-color);
+    color: var(--accent1-color);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta .btn:hover {
+    background-color: var(--hover-color);
+}
+
+.offerings .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
     border-radius: 15px;
 }
+
+.grid-item h3 {
+    font-family: var(--heading-font-family);
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--accent2-color);
+    text-shadow: 12px 15px 14px var(--accent2-color);
+}
+
+.grid-item p {
+    font-family: var(--text-font-family);
+    font-size: var(--text-font-size);
+    font-weight: var(--text-font-weight);
+}
+
+
 
 @media (min-width: 768px) {
     .hero {
