@@ -571,6 +571,113 @@ footer p {
     font-weight: var(--text-font-weight);
 }
 
+.cta-trips {
+    background-color: var(--secundary-color);
+    color: var(--accent2-color);
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-trips h2 {
+    font-family: var(--heading-font-family);
+    font-size: var(--heading-font-size);
+    font-weight: var(--heading-font-weight);
+    margin-bottom: 10px;
+}
+
+.cta-trips p {
+    font-size: var(--text-font-size);
+    font-weight: var(--text-font-weight);
+    margin-bottom: 20px;
+}
+
+.cta-trips .btn {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-trips .btn:hover {
+    background-color: var(--hover-color);
+}
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.trip-descriptions article {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trip-descriptions article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.trip-descriptions h3 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.trip-descriptions p {
+    font-size: var(--text-font-size);
+    margin-top: 10px;
+}
+
+.trip-table {
+    margin-top: 40px;
+    background-color: var(--accent3-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trip-table h2 {
+    font-size: var(--heading-font-size);
+    text-align: center;
+    color: var(--accent1-color);
+    border: 1px solid var(--accent2-color);
+    background-color: var(--accent2-color);
+    border-radius: 15px;
+    width: 400px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 5px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: 18px;
+}
+
+td {
+    background-color: #B8C2C2;
+    font-size: 16px;
+}
+
 
 
 @media (min-width: 768px) {
